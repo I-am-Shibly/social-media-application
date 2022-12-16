@@ -1,0 +1,11 @@
+.feed{
+    flex: 6
+}
+
+.feedWrapper{
+    padding: 20px;
+}
+
+.postTime{
+    font-size: 12px;
+}
