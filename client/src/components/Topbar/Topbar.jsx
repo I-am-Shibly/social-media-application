@@ -1,11 +1,18 @@
 import './topbar.css'
-import {Search, Person, Notifications } from '@mui/icons-material'
+import { AuthContext } from '../../context/AuthContext'
+import { Search, Person, Notifications } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
 
 export default function Topbar() {
+  const { user } = useContext(AuthContext)
+
   return (
     <div className='topbarContainer'>
       <div className="topbarLeft">
-        <span className="logo">ShiblySocial</span>
+        <Link to='/' style={{textDecoration: 'none'}}>
+          <span className="logo">ShiblySocial</span>
+        </Link>
       </div>
 
       <div className="topbarCenter">
@@ -33,7 +40,9 @@ export default function Topbar() {
             <Notifications />
             <span className="topbarIconBadge">1</span>
           </div>
-          <img src={require('../../assets/person/2.jpeg')} alt="" className="topbarImg" />
+          <Link to={`/profile/${user.username}`}>
+          <img src={user.profilePicture ? require(user.profilePicture) : require("../../assets/person/noAvatar.png")} alt="" className="topbarImg" />
+          </Link>
         </div>
       </div>
     </div>

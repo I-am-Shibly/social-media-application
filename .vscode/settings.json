@@ -2,7 +2,6 @@
   // Theme
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "material-icon-theme",
-
   //terminal
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.fontWeight": "normal",
@@ -10,14 +9,12 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.defaultProfile.linux": "bash",
   "files.autoSave": "afterDelay",
-
   // cursor
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "expand",
-
   // terminal customization
   "workbench.colorCustomizations": {
-    "terminal.background": "#1b1b2b",
+    "terminal.background": "#11111b",
     "terminal.foreground": "#ffffff",
     "terminalCursor.background": "#A89984",
     "terminalCursor.foreground": "#A89984",
@@ -27,18 +24,17 @@
     "terminal.ansiBrightBlue": "#0D6678",
     "terminal.ansiBrightCyan": "#8BA59B",
     "terminal.ansiBrightGreen": "#95C085",
-    "terminal.ansiBrightMagenta": "#b6ff7a",
+    "terminal.ansiBrightMagenta": "#a8ff56",
     "terminal.ansiBrightRed": "#FB543F",
     "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#e2af37",
-    "terminal.ansiCyan": "#00ffff",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
     "terminal.ansiGreen": "#95c085",
     "terminal.ansiMagenta": "#8F4673",
     "terminal.ansiRed": "#FB543F",
     "terminal.ansiWhite": "#A89984",
-    "terminal.ansiYellow": "#ffc63f"
+    "terminal.ansiYellow": "#FAC03B"
   },
-
   // config related to code formatting
   "editor.fontFamily": "Fira Code, Operator Mono",
   "editor.fontSize": 17,
@@ -47,7 +43,7 @@
   "editor.wordWrap": "on",
   "editor.renderLineHighlight": "none",
   "editor.formatOnType": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
@@ -59,14 +55,14 @@
       }
     ]
   },
-
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": null
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
   },
   "javascript.validate.enable": false, //disable all built-in syntax checking
   "editor.codeActionsOnSave": {
@@ -84,7 +80,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": true,
-
   //window
   "window.titleSeparator": "- ",
   "editor.formatOnPaste": true,
